@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { useLogoutMutation } from "../slices/usersApiSlice";
 import { logout } from "../slices/authSlice";
 import { useState } from "react";
-
+import logo from "../assets/main-logo.png";
 const Header = () => {
   const { userInfo } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -98,11 +98,12 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
-            <Link
-              to="/"
-              className="text-gray-800 text-2xl font-bold tracking-wide hover:text-[#00468A] transition-colors"
-            >
-              1stProvidence
+            <Link to="/" className="flex items-center">
+              <img
+                src={logo}
+                alt="1stProvidence Logo"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop nav */}

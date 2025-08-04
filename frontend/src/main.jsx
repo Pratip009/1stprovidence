@@ -24,6 +24,7 @@ import CourseScheduleScreen from './screens/CourseScheduleScreen.jsx';
 import ContactScreen from './screens/ContactScreen.jsx';
 import BlogScreen from './screens/BlogScreen.jsx';
 import GalleryScreen from './screens/GalleryScreen.jsx';
+import BlogDetails from './screens/BlogDetails.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
       <Route path='/schedule' element={<CourseScheduleScreen />} />
       <Route path='/contact' element={<ContactScreen />} />
       <Route path='/blog' element={<BlogScreen />} />
+      <Route path='/blog/:id' element={<BlogDetails />} />
       <Route path='/gallery' element={<GalleryScreen />} />
       <Route path='' element={<PrivateRoute />}>
         <Route path='/profile' element={<ProfileScreen />} />
