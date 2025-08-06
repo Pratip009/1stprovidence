@@ -12,7 +12,7 @@ import logo from "../assets/main-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-200 text-sm mt-2 border-t border-gray-700 font-exo">
+    <footer className="bg-gray-900 text-gray-200 text-sm border-t border-gray-700 font-exo">
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & about */}
         <div className="space-y-4">
